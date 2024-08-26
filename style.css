@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+
+#main{
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden !important;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* nav top css*/
+#nav_top{
+    width: 92.2vw;
+    height: 12vh;
+    padding: 0 4.5vw 0 4vw;
+    left: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+}
+
+
+#nav_top img{
+    height: 50px;
+}
+
+#nav_top >button {
+    padding: 7px;
+    font-family: "drunk heavy";
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 24px;
+    color: #fff;
+    white-space: nowrap;
+    background-color: rgb(199, 29, 29);
+    border-style: none;
+    cursor: pointer;
+}
+
+#nav_top>i {
+    font-size: 2.5vw;
+    display: none;
+}
+
+#nav_left {
+    width: 6vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    gap: 2vmax;
+    border-right: 2px solid rgb(156, 58, 58);
+}
+
+
+
+/* bottol  */
+
+#bottle {
+    position: absolute;
+    height: 95vh;
+    top: 0;
+    left: 38%;
+    z-index: 990;
+    border-image: 0 0 2vmax black;
+}
+
+#bottlecopy{
+    display: none;
+}
+
+#page-1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#page-1 h1{
+    width: 60vw;
+    background-color: rgb(153,13,13);
+    font-family: 'Antom',sans-serif;
+    font-size: 13vw;
+    font-weight: 400;
+    text-align: center;
+    word-spacing: -1.5vw;
+    text-transform: uppercase;
+    line-height: 12vw;
+    background-image: url(img/texture.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing : antialiased;
+}
+
+#Page1_dog{
+    height: 15vh;
+    position: absolute;
+    top: 17%;
+    left: 34.5%;
+    transform: rotate(-30deg);
+}
+
+/* page-2 */
+
+#page-2{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.page2-left{
+    width: 40%;
+    height: 86vh;
+    gap: 20px;
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page2-left h3{
+    font-family: dancing script;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.page2-left h1{
+        width: 26vw;
+        color: #000;
+        height: 43vh;
+        font-size: 7vw;
+        line-height: 7vw;
+        font-family: "Anton", sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        word-spacing: -1vmax;
+        background: url(img/texture.png);
+        background-position: top;
+        background-repeat: repeat;
+        background-size: cover;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-color: #000;
+        -webkit-font-smoothing: antialiased;
+}
+
+.page2-left p{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 15px;
+
+}
+
+.page2-left>button{
+    padding: 10px 20px;
+    font-family: "drunk heavy";
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 20px;
+    white-space: nowrap;
+    background-color: #000;
+    cursor: pointer;
+    border-style: none;
+    color: #fff;
+}
+
+.page2-right{
+    width: 24%;
+    height: 65vh;
+    padding: 3.5vmax 3.5vmax;
+    border: 0.2vmax solid #000;
+    font-family: "Poppins", sans-serif;
+    gap: 10px 20px;
+}
+
+
+
+
+#page3 {
+    width: 100vw;
+    height: 110vh;
+    padding: 0 5vmax 0 10vmax;
+}
+
+#page3 h1 {
+    width: 85vw;
+    font-size: 18.3vw;
+    line-height: 18.5vw;
+    font-weight: 500;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    background: url(img/texture.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: rgb(177, 29, 29);
+}
+
+
+#page3_text {
+    display: flex;
+    justify-content: space-between;
+}
+#page3_text_part1 a img {
+    width: 25vw;
+    margin-top: 3vh;
+}
+#page3_text_part1 h5 {
+    width: 23vw;
+    font-size: 2vw;
+    margin-top: 3vh;
+    line-height: 4vh;
+    font-family: Gilroy;
+}
+
+#page3_text_part2 {
+    width: 30vw;
+    padding: 1vmax 2vmax;
+}
+#page3_text_part2 h5 {
+    width: 25vw;
+    font-size: 1vmax;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 100;
+}
+#page3_text_part2 h2 {
+    margin-top: 2vmax;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5vmax;
+    font-weight: 100;
+    letter-spacing: 0.05vmax;
+
+}
+#page3_text_part2 p {
+   margin-top: 3vh;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 100;
+}
+
+#page4 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+#page4_color_image1 {
+    width: 20vw;
+    margin: 0vh 0 0 20vh;
+}
+#page4_color_image1_text {
+    width: 13vw;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    color: #fff;
+    text-align: center;
+}
+#page4_color_image1_text h4 {
+    width: 8vw;
+    margin-bottom: 1vh;
+    margin-left: 3vmax;
+    font-family: 'Anton', sans-serif;
+    border-bottom: 0.2vmax solid #000;
+    font-weight: 100;
+    letter-spacing: 0.1vmax;
+    text-transform: uppercase;
+}
+
+
+
+#page4_color_image2 {
+    width: 21vw;
+    margin: 26vh 0 0 -6vh;
+}
+
+#page4_color_image2_text {
+    width: 13vw;
+    position: absolute;
+    top: 32%;
+    left: 33%;
+    color: #fff;
+    text-align: center;
+}
+#page4_color_image2_text h4 {
+    width: 4vw;
+    margin-left: 5vmax;
+    font-family: 'Anton', sans-serif;
+    border-bottom: 0.2vmax solid #000;
+    font-weight: 100;
+    letter-spacing: 0.1vmax;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+
+
+#page4_color_image3 {
+    width: 25vw;
+    margin: 20vh 0 0 40vh;
+}
+#page4_color_image3_text {
+    width: 15vw;
+    position: absolute;
+    top: 30%;
+    left: 74%;
+    color: #fff;
+    text-align: center;
+}
+#page4_color_image3_text h4 {
+    width: 8vw;
+    margin-bottom: 1vh;
+    margin-left: 3.5vmax;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    border-bottom: 0.2vmax solid #000;
+    font-weight: 100;
+    letter-spacing: 0.1vmax;
+    text-transform: uppercase;
+}
+
+#page4_color_image4 {
+    width: 16vw;
+    height: 50vh;
+    margin: 45vh 0 0 -165vh;
+    transform: rotate(-17deg);
+}
+
+
+/* Page 5 css */
+
+
+#page5 {
+    width: 100vw;
+    height: 110vh;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+#page5 h5 {
+    font-size: 2.5vmax;
+    font-family: Gilroy;
+}
+#page5 h1 {
+    width: 30vw;
+    text-transform: uppercase;
+    font-family: 'Anton',sans-serif;
+    font-weight: 600;
+    font-size: 6.5vw;
+    background: url(img/texture.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: black;
+}
+
+
+
+#page5_image_box {
+    width: 100vw;
+    height: 85vh;
+    padding: 0 3vw 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#page5_bottel {
+    width: 15vw;
+    height: 60vh;
+    justify-content: center;
+}
+#page5_bottel h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-family: Gilroy;
+}
+
+#page5_bottel img {
+    width: 15vw;
+}
+#image11 {
+    height: 48vh;
+}
+#image22 {
+    transform: rotate(-15deg);
+}
+#image33 {
+    height: 47vh;
+    opacity: 0;
+    transform: rotate(-15deg);
+}
+#image44 {
+    transform: rotate(-15deg);
+}
+#image55 {
+    transform: rotate(-15deg);
+}
+#page5_bottel h4 {
+    font-family: 'Dosis', sans-serif;
+}
+#page5_bottel h6 {
+    display: flex;
+    justify-content: space-around;
+    font-family: Gilroy;
+    font-size: 1.1vmax;
+}
+
+
+/* Page 6 */
+
+#page6 {
+    width: 100vw;
+    height: 90vh;
+    padding: 0 0vw 0 9vw;
+    display: flex;
+    gap: 30px;
+}
+#page6 img {
+    width: 50vw;
+    height: 62vh;
+}
+
+#page5_part2 {
+    padding: 0 4vw 0 4vw;
+    width: 40vw;
+    height: 62vh;
+}
+#page6_part2 h5 {
+    font-size: 2vmax;
+    font-family: Gilroy;
+}
+
+#page6_part2 h1 {
+   margin-top: 3vh;
+   width: 30vw;
+   font-family: 'Anton', sans-serif;
+   font-size: 4vw;
+   font-weight: 100;
+   line-height: 9.5vh;
+   letter-spacing: 0.5vw;
+   text-transform: uppercase;
+}
+#page6_part2 p {
+    margin-top: 3vh;
+    font-weight: 400;
+    font-family: 'Dosis', sans-serif;
+    color: #111;
+}
+#page6_part2>button {
+    margin-top: 3vh;
+    font-size: 1.2vmax;
+    padding: 0.8vmax 1.5vmax;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #fff;
+    background-color: #000;
+    border-style: none;
+    cursor: pointer;
+}
